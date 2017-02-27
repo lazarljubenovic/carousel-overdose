@@ -1,0 +1,39 @@
+include ./carousel.pug
+
+doctype html
+
+html(lang="en")
+
+head
+  meta(charset="utf-8")
+  title Carousel 4
+  script(src="https://use.fontawesome.com/ca55f3aac3.js")
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+  link(href="carousel-4.css" rel="stylesheet")
+
+-
+  const data = [
+    {
+      imageUrl: 'https://unsplash.it/800',
+      title: 'Title 1',
+      description: 'Number one.',
+    },
+    {
+      imageUrl: 'https://unsplash.it/801',
+      title: 'Title 2',
+      description: 'Number two.',
+    },
+    {
+      imageUrl: 'https://unsplash.it/802',
+      title: 'Title 3',
+      description: 'Number three.',
+    },
+    {
+      imageUrl: 'https://unsplash.it/803',
+      title: 'Title 4',
+      description: 'Number four.',
+    },
+  ]
+
+body
+  +carousel(data, 'carousel')

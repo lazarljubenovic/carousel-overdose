@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="utf-8">
+  <title>Carousel 3</title>
+  <script src="https://use.fontawesome.com/ca55f3aac3.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="carousel-3.css" rel="stylesheet">
+</head>
+<body>
+  <section id="carousel">
+    <article style="background-image: url(https://unsplash.it/800);">
+      <div>
+        <h2>Title 1</h2><span class="description">Number one.</span>
+      </div>
+    </article>
+    <article style="background-image: url(https://unsplash.it/801);">
+      <div>
+        <h2>Title 2</h2><span class="description">Number two.</span>
+      </div>
+    </article>
+    <article style="background-image: url(https://unsplash.it/802);">
+      <div>
+        <h2>Title 3</h2><span class="description">Number three.</span>
+      </div>
+    </article>
+    <article style="background-image: url(https://unsplash.it/803);">
+      <div>
+        <h2>Title 4</h2><span class="description">Number four.</span>
+      </div>
+    </article>
+    <button class="navigation prev"><i class="fa fa-angle-left"></i></button>
+    <button class="navigation next"><i class="fa fa-angle-right"></i></button>
+    <nav>
+      <form>
+        <input type="radio" name="carousel" id="carousel-0" value="carousel-0"/>
+        <label for="carousel-0"></label>
+        <input type="radio" name="carousel" id="carousel-1" value="carousel-1"/>
+        <label for="carousel-1"></label>
+        <input type="radio" name="carousel" id="carousel-2" value="carousel-2"/>
+        <label for="carousel-2"></label>
+        <input type="radio" name="carousel" id="carousel-3" value="carousel-3"/>
+        <label for="carousel-3"></label>
+      </form>
+    </nav>
+  </section>
+  <script src="carousel-3.js"></script>
+  <script>const carousel3 = Carousel3(document.getElementById('carousel'))</script>
+</body>

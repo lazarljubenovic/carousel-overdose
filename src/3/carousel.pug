@@ -1,0 +1,21 @@
+mixin carousel(elements, id)
+  section(id=id)
+    each element, index in elements
+      article(style=`background-image: url(${element.imageUrl})`)
+        div
+          h2 #{element.title}
+          span.description #{element.description}
+    button.navigation.prev
+      i.fa.fa-angle-left
+    button.navigation.next
+      i.fa.fa-angle-right
+    nav
+      form
+        each element, index in elements
+          input(
+            type="radio"
+            name="carousel"
+            id=`carousel-${index}`
+            value=`carousel-${index}`
+          )
+          label(for=`carousel-${index}`)

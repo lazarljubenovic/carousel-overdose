@@ -1,0 +1,23 @@
+{
+  "name": "carousel-overdose",
+  "version": "0.1.0",
+  "description": "Comparison of different techniques for creating a simple carousel.",
+  "main": "index.js",
+  "repository": {},
+  "author": "lazarljubenovic <lazar.ljubenovic.1995@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-sass": "node-sass --output-style compressed ./src -o ./src",
+    "watch-sass": "nodemon -e scss -x \"yarn build-sass\"",
+    "build-pug": "pug --pretty ./src/3/index.pug ./src/4/index.pug",
+    "watch-pug": "nodemon -e pug -x \"yarn build-pug\"",
+    "watch": "yarn watch-sass & yarn watch-pug"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6",
+    "typescript": "^2.2.1"
+  }
+}
